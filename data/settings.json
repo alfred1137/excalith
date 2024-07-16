@@ -1,7 +1,7 @@
 {
-	"username": "Excalith",
+	"username": "HiYun1137",
 	"theme": {
-		"name": "HiYun1137",
+		"name": "Default",
 		"backgroundColor": "#121317",
 		"windowColor": "#1e212b",
 		"textColor": "#e2e2e2",
@@ -200,7 +200,7 @@
 						"icon": "ph:orange-slice-thin"
 					},
 					{
-						"name": "Streaming Sites @ FMHY.net",
+						"name": "Streaming Sites",
 						"url": "https://fmhy.net/videopiracyguide#multi-server",
 						"icon": "mdi:tv"
 					},
