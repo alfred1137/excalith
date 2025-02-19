@@ -142,7 +142,7 @@
 				"links": [
 					{
 						"name": "Twitter",
-						"url": "https://twitter.com",
+						"url": "https://x.com",
 						"icon": "mdi:twitter"
 					},
 					{
@@ -232,7 +232,7 @@
 						"icon": "fluent:notebook-lightning-20-regular"
 					},
 					{
-						"name": "AI Studio",
+						"name": "Google AI Studio",
 						"url": "https://aistudio.google.com/app/prompts/new_chat",
 						"icon": "mingcute:butterfly-2-line"
 					},
@@ -249,10 +249,25 @@
 				"align": "left",
 				"links": [
 					{
+						"name": "Google Map",
+						"url": "https://github.com/alfred1137/",
+						"icon": "mdi:google-maps"
+					},
+					{
+						"name": "G Mail",
+						"url": "https://github.com/alfred1137/",
+						"icon": "streamline:gmail-solid"
+					},
+					{
+						"name": "Google Drive",
+						"url": "https://github.com/alfred1137/",
+						"icon": "stash:google-drive-light"
+					},
+					{
 						"name": "Github",
 						"url": "https://github.com/alfred1137/",
 						"icon": "bi:github"
-					}
+					},
 				]
 			}
 		]
