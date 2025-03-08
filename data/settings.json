@@ -250,17 +250,17 @@
 				"links": [
 					{
 						"name": "Google Map",
-						"url": "https://github.com/alfred1137/",
+						"url": "https://www.google.com/maps/",
 						"icon": "mdi:google-maps"
 					},
 					{
-						"name": "G Mail",
-						"url": "https://github.com/alfred1137/",
+						"name": "GMail",
+						"url": "https://mail.google.com/mail/u/0/#inbox/",
 						"icon": "streamline:gmail-solid"
 					},
 					{
 						"name": "Google Drive",
-						"url": "https://github.com/alfred1137/",
+						"url": "https://drive.google.com/drive/u/0/my-drive/",
 						"icon": "stash:google-drive-light"
 					},
 					{
