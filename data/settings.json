@@ -146,9 +146,9 @@
 				"align": "left",
 				"links": [
 					{
-						"name": "Twitter",
+						"name": "𝕏",
 						"url": "https://x.com",
-						"icon": "mdi:twitter"
+						"icon": "mingcute:social-x-line"
 					},
 					{
 						"name": "Discord",
@@ -179,7 +179,7 @@
 					},
 					{
 						"name": "CS.RIN.RU",
-						"url": "https://cs.rin.ru/forum/viewforum.php?f=10",
+						"url": "https://cs.rin.ru/forum/ucp.php?i=main&mode=subscribed",
 						"icon": "mdi:forum"
 					},
 					{
@@ -210,8 +210,8 @@
 						"icon": "mdi:tv"
 					},
 					{
-						"name": "Football",
-						"url": "https://www1.footybite.cc/",
+						"name": "Live Sports",
+						"url": "https://fmhy.pages.dev/video#live-sports",
 						"icon": "mdi:soccer"
 					},
 					{
@@ -260,12 +260,12 @@
 					},
 					{
 						"name": "GMail",
-						"url": "https://mail.google.com/mail/u/0/#inbox/",
+						"url": "https://mail.google.com/mail/",
 						"icon": "streamline:gmail-solid"
 					},
 					{
 						"name": "Google Drive",
-						"url": "https://drive.google.com/drive/u/0/my-drive/",
+						"url": "https://drive.google.com/drive/",
 						"icon": "stash:google-drive-light"
 					},
 					{

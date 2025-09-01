@@ -1,8 +1,8 @@
 <div align="center">
-	<h1 align="center">Excalith Start Page</h1>
+	<h1 align="center">Excalith Start Page (Customized Fork)</h1>
 	<img src=".github/startpage.gif" />
 
-This is an interactive start page for browsers, inspired from my terminal setup.
+This is a customized fork of the [original Excalith Start Page project](https://github.com/excalith/excalith-start-page) for personal use. For comprehensive documentation, built-in commands, key bindings, and detailed usage instructions, please refer to the [original repository](https://github.com/excalith/excalith-start-page).
 
 ### Built-In Commands
 
@@ -24,40 +24,48 @@ This is an interactive start page for browsers, inspired from my terminal setup.
 - Clear the prompt quickly with <kbd>CTRL</kbd> + <kbd>C</kbd>
 - Close windows with <kbd>ESC</kbd>
 
-
 ## Using
 
-There are multiple ways of using this app explained in details on [getting started](https://github.com/excalith/excalith-start-page/wiki/Getting-Started) wiki page. Here is a TLDR:
+This fork is primarily intended for personal customization. For detailed information on how to use the original application, including methods like Docker or the online version, please visit the [original project's Getting Started Wiki Page](https://github.com/excalith/excalith-start-page/wiki/Getting-Started).
 
-### Fork
+To customise the page, modify [settings.json](data\settings.json).
 
-You can fork this repository and have direct control over the source code. This is the best way to customize the start page to your liking. Then you can create *Docker images*, *deploy on your server* or *serve it locally*. Check out the [Fork Wiki Page](https://github.com/excalith/excalith-start-page/wiki/Fork) for more information.
+## Upgrading the Fork
 
-### Docker Image
+To keep the customized fork up-to-date with the latest changes from the original Excalith Start Page project, follow these steps:
 
-Using a Docker image is another convenient way to use the start page. You can either use the image from Docker Hub or Github Registry. Currently supports both **amd64** and **arm64** images. Check out the [Docker Wiki Page](https://github.com/excalith/excalith-start-page/wiki/Docker) for more information.
+1.  **Add the Upstream Remote:**
+    Add the original Excalith repository as an upstream remote to my local fork:
+    ```bash
+    git remote add upstream https://github.com/excalith/excalith-start-page.git
+    ```
 
-### Online Version
-You can use the Online Version (aka. preview version) as well. However, since this is the preview of the project with constant updates, it might break your configurations. I would recommend building your own fork instead. Check out the [Online Version Wiki Page](https://github.com/excalith/excalith-start-page/wiki/Online) for more information.
+2.  **Fetch Upstream Changes:**
+    Fetch the latest changes from the upstream repository:
+    ```bash
+    git fetch upstream
+    ```
 
+3.  **Merge Changes:**
+    To incorporate the upstream changes into my local `main` branch (or my primary branch), use a squash merge to keep my fork's history clean. Replace `vX.Y.Z` with the specific tag or branch you want to merge (e.g., `v3.1.5` as in the example below):
+    ```bash
+    git merge upstream/vX.Y.Z --squash --allow-unrelated-histories
+    ```
 
-## Customization
-
-This project, at its heart, supports customization to better suit your desktop environment. There are three methods to personalize the project according to your preferences:
-
-You can either
-- **Method 1:** Configure your **fork** by editing [settings.json](./data/settings.json) file
-- **Method 2:** Use `config edit` command to edit on the fly, by built-in json editor
-- **Method 3:** Use `config import <url>` command to import your remote config file from your dotfiles repository
-  
-Check out the [Configuration](https://github.com/excalith/excalith-start-page/wiki/Configuration) and [Themes](https://github.com/excalith/excalith-start-page/wiki/Themes) wiki pages for more information regarding themes and configuration options.
-
-
-## How To Contribute
-
-Please feel free to contribute any way you can. Just keep in mind that you should pay attention to [contributing guideline](.github/CONTRIBUTING.md) before contributing.
-
+    **Handling Merge Conflicts:**
+    If there are conflicts (e.g., `CONFLICT (content): Merge conflict in data/settings.json`), I will need to resolve them manually.
+    *   Open the conflicted files in my editor (e.g., `data/settings.json`).
+    *   Look for conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
+    *   Edit the file to combine the changes as desired, choosing which parts to keep from my fork and which from the upstream.
+    *   After resolving conflicts, stage the changes:
+        ```bash
+        git add <conflicted-file-path>
+        ```
+    *   Then, commit the merged changes:
+        ```bash
+        git commit -m "Merge upstream vX.Y.Z into customized fork"
+        ```
 
 ## License
 
-The code is available under the [MIT license](LICENSE). Feel free to copy, modify, and distribute the code as you wish, but please keep the original license in the files. Attribution is appreciated and will definetely help improving this project.
+The code is available under the [MIT license](LICENSE). Feel free to copy, modify, and distribute the code as you wish, but please keep the original license in the files. Attribution is appreciated and will definitely help improving this project.
